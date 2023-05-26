@@ -6,6 +6,8 @@ This project is a simple calendar application that allows a user to save events 
 
 The Day.js library is used to work with day and time. The timeblocks in the application will be color-coded to indicate whether it is in the past, presentm or future. The user will be able to save their work if a user decides to refresh the page.
 
+The live link for this application can be found at: https://karthikmurugappan.github.io/work-day-scheduler/
+
 ## User Story
 
 ```md
