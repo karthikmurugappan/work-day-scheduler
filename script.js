@@ -4,7 +4,6 @@ var timeNow = (dayjs().format('HH'));
   function currentTime() {
     for (var i = 9; i < 18; i++) {
       var hour = $('#' + i);
-      console.log(hour);
       
       if (hour.attr('id') === timeNow) {
         hour.addClass('present');
@@ -16,20 +15,16 @@ var timeNow = (dayjs().format('HH'));
     }
   }
   
-  $('#currentDay').text(dateNow);
-  
-  currentTime();
-
-  function storeData() {
-    var date = localStorage.getItem('date');
-  }
-
   function loadSavedData() {
     for (i = 9; i < 18; i++) {
-      var x = '0' + i;
+      var x = i;
       var descr = $('.description');
       $('#' + i).children(descr).val(localStorage.getItem(x));
     }
+  }
+
+  function storeData() {
+    var date = localStorage.getItem('date');
   }
 
   $(document).ready(function() {
